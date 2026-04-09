@@ -1,0 +1,31 @@
+subscriptions:
+  - name: "ParentMap"
+    sender: "news@parentmap.com"
+    follow_link: auto          # or "GET YOUR WEEKEND ON" for exact match
+    prompt: |
+      You are recommending weekend kids or family activites based on the newsletters. The audiences are parents or grandparents
+      Look at this newsletter and see if it covers any weekend activities, if not then return empty content.
+      If it does have weekend activities, summmarize into bullet points: 
+      each bullet is one activity, with date and time, location, hightlights. Do not hellucinate if no details provided.
+      You can add emoji to make it fun to read but no more than two per bullet.
+
+  - name: "ByteByteGo"
+    sender: "bytebytego@substack.com"
+    prompt: |
+      Summarize the article or section that match the title of this newsletter. Not necessarily TLDR short style; rather think of 
+      I don't have time to browse the whole article, but I do want to know as much important points as possible.
+      There might have multiple sections but we only care about the one that match the newsletter title.
+      Focus on: what problems/challenges, the key ideas and solutions, what software / system design aspects being discussed.
+
+  # Template for adding more subscriptions:
+  # - name: "Newsletter Name"
+  #   sender: "sender@example.com"
+  #   prompt: |
+  #     Your custom summarization prompt here.
+
+settings:
+  my_email: "your@gmail.com"   # <-- Replace with your Gmail address
+  digest_subject: "Daily Digest — {date}"
+  gemini_model: "gemini-2.0-flash"
+  max_emails_per_sender: 3     # Safety cap per subscription per run
+  # look_back_days: 2           # How far back to look for unread emails

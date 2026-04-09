@@ -1,0 +1,1881 @@
+Delivered-To: danielle.mei1989@gmail.com
+Received: by 2002:a05:6022:82:20b0:f1:cba7:aa0 with SMTP id h2-n2csp1535229laq;
+        Thu, 12 Mar 2026 20:32:52 -0700 (PDT)
+X-Received: by 2002:a05:6214:4011:b0:899:fc48:4e63 with SMTP id 6a1803df08f44-89a81a0ab1amr33275056d6.0.1773372772538;
+        Thu, 12 Mar 2026 20:32:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1773372772; cv=none;
+        d=google.com; s=arc-20240605;
+        b=f1Zw+vcTJ3Z63k6/1Bvkf6W3jcx0+slRzS9jjMD/7HW36SDnXsFAEyrl1qcZZ3bAcE
+         /LYfLe1S5/MLawN6meNlUBOvq5pgSe7KrbwdPuE7A0VL2Y8m3Y3vaUTfM+s3bMh2K4Q4
+         MqD0kCbQwUYedV4lHuz2s2UVdKcskot4z2KS69kwjdzGSbBGyPQo8bis5c/tE2ve8UZ+
+         1R/c8INN6NwVHVxrHtkrB9KKakbqU6EL98BiU/AbGnvKAiYEMvTrPM3TTLrGQ09zbQWm
+         M1c2Sx2vE71FowZjCsTsTW6J3HzfJoINqZX7MxTK334tg3Aoe43Ut2q3HmPey6Sgml/G
+         YkLA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=feedback-id:list-unsubscribe-post:list-unsubscribe:precedence
+         :reply-to:message-id:date:to:from:subject:mime-version
+         :dkim-signature:dkim-signature;
+        bh=vJI62u1yJefAR6qIBVJmOqxO/YWH+76gpKE2nVXXcQU=;
+        fh=oJD9DiJKL62c2JJ8PzHUBN9/ZnIiD8mlr3h4OTIH90I=;
+        b=YWZ7gTr9qfo8NF+T3RkOPMca1w3f1gbTN9mAZr7xva830N8jS9g1YcwptKDB8QYb/M
+         t35/6KqzUy4jJlaoH+ESg2HOAuUVwXtG7UIPyXhqyw8rm1YEfCni0p6yKJ4NVbcAsiw4
+         Gp4Kz+olBqDF9gZqu/fJB0E6QaCFpbCKBLwJKFdsyLMoK4QE69qNPOg+Et3ppJc22IK8
+         K0wrMcpmxJFklWKkWCQkAGEFIhNwrGj3M7chBINdrfuI2ePJpKML7V4SaO0HrBiCR5/W
+         4CKGrXmjEQWV5IC/6eU2HqF1/OhgIEjn68aFXvbWC6bNPSaEGb2AsmYa0lWVvBOFF2xd
+         W6Gg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@parentmap.com header.s=e2ma-k3 header.b=ajIIccZc;
+       dkim=pass header.i=@e2ma.net header.s=e2ma header.b=ciLxbUBM;
+       spf=pass (google.com: domain of 824841604.1782148.10979050884@e2ma.net designates 139.60.0.73 as permitted sender) smtp.mailfrom=824841604.1782148.10979050884@e2ma.net;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=parentmap.com
+Return-Path: <824841604.1782148.10979050884@e2ma.net>
+Received: from mail73-2z9c.e2ma.net (mail73-2z9c.e2ma.net. [139.60.0.73])
+        by mx.google.com with ESMTPS id 6a1803df08f44-89a65bc63d6si102221266d6.134.2026.03.12.20.32.52
+        for <danielle.mei1989@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 12 Mar 2026 20:32:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 824841604.1782148.10979050884@e2ma.net designates 139.60.0.73 as permitted sender) client-ip=139.60.0.73;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@parentmap.com header.s=e2ma-k3 header.b=ajIIccZc;
+       dkim=pass header.i=@e2ma.net header.s=e2ma header.b=ciLxbUBM;
+       spf=pass (google.com: domain of 824841604.1782148.10979050884@e2ma.net designates 139.60.0.73 as permitted sender) smtp.mailfrom=824841604.1782148.10979050884@e2ma.net;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=parentmap.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=e2ma-k3; d=parentmap.com; h=Content-Type:MIME-Version:Subject:From:To:Date:Message-ID:Reply-To: List-Unsubscribe:List-Unsubscribe-Post:Feedback-ID:from:to:subject:cc; i=news@parentmap.com; bh=vJI62u1yJefAR6qIBVJmOqxO/YWH+76gpKE2nVXXcQU=; b=ajIIccZcaDU4YpNOjV9GNB0o6faPkZZan1DyYH3JwOmwMDix9o31EirySTzpo7uyVtx+wWpTsYi9
+   WPxkVfYaiLQuY2nhLiEfNFXD4IMjwbZ6Lph54aRGWKYtE0ZIsY9EHDaxh56np91K16EekepmPuUP
+   9/5aBRFxv4gYMotZtt9hUHYdk2RcnC7UF6Mk9lSW0z2NKiySHX8qOTKESW3dr1VjM6VzOlYMNj+O
+   Itpn7SLtmRH+BjZVc206NZxLQMqGOrL+UqSqoC93exCBxb3sKSUUCEyA34IHKp948kYsk5KYEiOb
+   3oAsXxCTBf0KZ0XDsXw0oH2W6VTCsFGnoVz1WQ==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=e2ma; d=e2ma.net; h=Content-Type:MIME-Version:Subject:From:To:Date:Message-ID:Reply-To: List-Unsubscribe:List-Unsubscribe-Post:Feedback-ID; i=@mail73-2z9c.e2ma.net; bh=vJI62u1yJefAR6qIBVJmOqxO/YWH+76gpKE2nVXXcQU=; b=ciLxbUBMVyM1yeZIda9eiJQZQJZRl8LT83jYEJ1qRPQlarUf69Dx8NhZFu3Zw7xt0ydOCSUB9QuO
+   t8E0K/Pt0hfDSCnG//CCiIo/5+ZU2ayVDwer4yNbDUGAVa7uuAB7phxRV/kNJLHkPJPGFXrtVDI1
+   OaO0l7+vYeY1bjax1AM=
+Received: by mail73-2z9c.e2ma.net id hme2m83791s5 for <danielle.mei1989@gmail.com>; Thu, 12 Mar 2026 22:32:52 -0500 (envelope-from <824841604.1782148.10979050884@e2ma.net>)
+Content-Type: multipart/alternative; boundary="==177337277208630=="
+MIME-Version: 1.0
+Subject: 🐮 Best Farms for Up-Close Animal Encounters
+From: ParentMap Eastside Weekender <news@parentmap.com>
+To: danielle.mei1989@gmail.com
+Date: Fri, 13 Mar 2026 03:32:52 -0000
+Message-ID: <eehcb.24hdxn.y5fxubf@e2ma.net>
+Reply-To: news@parentmap.com
+Precedence: bulk
+Return-Path: 824841604.1782148.10979050884@e2ma.net
+List-Unsubscribe: <https://t.e2ma.net/optout/24hdxn/y5fxubf?s=rs8nzvsalzASi-xHinmxgv2taFDtEx3AwlLvyxCJSyY>,<mailto:y5fxubf.24hdxn.eehcb.optout@e2ma.net>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Test-Mailing: no
+Feedback-ID: 1782148:824841604:mainstream:EMMAFBL
+
+--==177337277208630==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+
+
+Plus, a free family concert, a St. Paddy's parade and a Pi Day pizza deal.
+
+
+To view this email online, paste this link into your browser:
+https://t.e2ma.net/message/24hdxn/y5fxubf
+
+
+
+
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/e6udb4c)
+
+Best farms for up-close animal e (https://t.e2ma.net/click/24hdxn/y5fxubf/u=
+yvdb4c)ncounters
+
+Gather your gaggle to meet pigs, goats, cows, kangaroos and more at these a=
+dorable animal spots, many free!
+
+It (https://t.e2ma.net/click/24hdxn/y5fxubf/arwdb4c)
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/qjxdb4c)
+
+Family outings teens actually won=E2=80=99t hate (https://t.e2ma.net/click/=
+24hdxn/y5fxubf/6bydb4c)
+
+Stop the eye roll with simulated flights, concerts, and a brand-new indoor =
+skiing and snowboarding spot.
+
+Togetherness 2.0 =E2=96=BA (https://t.e2ma.net/click/24hdxn/y5fxubf/m4ydb4c=
+)
+
+Advertisement
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/2wzdb4c)
+
+Red Gate Farm Day Camp (https://t.e2ma.net/click/24hdxn/y5fxubf/ip0db4c)
+
+Red Gate Farm is an outdoor camp where campers can build their self-confide=
+nce by riding and learning horsemanship.
+
+More =E2=96=BA (https://t.e2ma.net/click/24hdxn/y5fxubf/yh1db4c)
+
+Meredith=E2=80=99s top 10 weekend picks (https://t.e2ma.net/click/24hdxn/y5=
+fxubf/ea2db4c)
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/u22db4c)
+
+We=E2=80=99re finally out of the Big Dark, and I have 10 weekend events (ht=
+tps://t.e2ma.net/click/24hdxn/y5fxubf/av3db4c) that will make the most of t=
+he sun setting after 7 p.m. Fill a whole day with a tour of the U District =
+(https://t.e2ma.net/click/24hdxn/y5fxubf/qn4db4c) that your taste buds will=
+ love, or experience the sounds of nature through Beethoven=E2=80=99s symph=
+ony (https://t.e2ma.net/click/24hdxn/y5fxubf/6f5db4c). Plus, there=E2=80=99=
+s a brand-new museum (https://t.e2ma.net/click/24hdxn/y5fxubf/m85db4c) to e=
+xplore and a few other surprises you won=E2=80=99t want to miss.
+
+=E2=80=94=C2=A0Meredith Charaba, family fun editor
+
+GET YOUR WEEKEND ON =E2=96=BA (https://t.e2ma.net/click/24hdxn/y5fxubf/206d=
+b4c)
+
+Advertisement
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/it7db4c)
+
+Join the Samena Club (https://t.e2ma.net/click/24hdxn/y5fxubf/yl8db4c)
+
+Wellness. Education. Fun. Get in some laps, keep the kids active or join a =
+fitness class =E2=80=94 there=E2=80=99s something for everyone at Samena!
+
+More=C2=A0=E2=96=BA (https://t.e2ma.net/click/24hdxn/y5fxubf/ee9db4c)
+
+5 things to do with the kids this weekend (https://t.e2ma.net/click/24hdxn/=
+y5fxubf/u69db4c)
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/azaeb4c)
+
+=C2=A0Celebrate the blossoming cherry trees with special treats and deals f=
+rom 90 businesses during this spring-themed festival (https://t.e2ma.net/cl=
+ick/24hdxn/y5fxubf/qrbeb4c). (FRI.=E2=80=93SUN.)
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/6jceb4c)
+
+Shamrock and roll at this=C2=A0festive street party (https://t.e2ma.net/cli=
+ck/24hdxn/y5fxubf/mcdeb4c)=C2=A0that brings balloon twisting, face painting=
+, a DJ and more to a fave shopping center.=C2=A0(SAT.)
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/24deb4c)
+
+Craft a paper lantern, watch a lion dance and kung fu performances, and wel=
+come the Year of the Horse at this vibrant celebration (https://t.e2ma.net/=
+click/24hdxn/y5fxubf/ixeeb4c). (SAT.)
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/ypfeb4c)
+
+Indulge in traditional Irish food, catch a few dance performances and celeb=
+rate St. Patrick=E2=80=99s Day weekend at this free festival (https://t.e2m=
+a.net/click/24hdxn/y5fxubf/eigeb4c). (SAT.=E2=80=93SUN.)
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/uaheb4c)
+
+Let the kids get creative with arts and crafts, a collaborative mural, and =
+even a scavenger hunt at a local library=E2=80=99s=C2=A0spring extravaganza=
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/a3heb4c). (SUN.)
+
+EVENTS EVERY DAY OF THE WEEK =E2=96=BA (https://t.e2ma.net/click/24hdxn/y5f=
+xubf/qvieb4c)
+
+Advertisement
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/6njeb4c)
+
+Seattle Rep=E2=80=99s theater classes for teens (https://t.e2ma.net/click/2=
+4hdxn/y5fxubf/mgkeb4c)
+
+Calling all young theater lovers! Seattle Rep=E2=80=99s Young Rep classes a=
+re a space for theater-loving youth to connect, create and grow together.
+
+More =E2=96=BA (https://t.e2ma.net/click/24hdxn/y5fxubf/28keb4c)
+
+Popular now
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/i1leb4c)
+
+The little-known festival that rivals the tulips (https://t.e2ma.net/click/=
+24hdxn/y5fxubf/ytmeb4c)
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/emneb4c)
+
+Best free events this month you don=E2=80=99t want to miss (https://t.e2ma.=
+net/click/24hdxn/y5fxubf/ueoeb4c)
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/a7oeb4c)
+
+Incredible ramen spots the kids will love too (https://t.e2ma.net/click/24h=
+dxn/y5fxubf/qzpeb4c)
+
+Advertisements
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/6rqeb4c)
+
+Unique bilingual Montessori education (https://t.e2ma.net/click/24hdxn/y5fx=
+ubf/mkreb4c)
+
+For over 10 years Eastside Bilingual Montessori=E2=80=99s goal=C2=A0has bee=
+n to provide a high-quality bilingual Montessori education in a comfortable=
+, peaceful and safe environment.
+
+More=C2=A0=E2=96=BA (https://t.e2ma.net/click/24hdxn/y5fxubf/2cseb4c)
+
+ (https://t.e2ma.net/click/24hdxn/y5fxubf/i5seb4c)
+
+The quiet crisis facing boys today (https://t.e2ma.net/click/24hdxn/y5fxubf=
+/yxteb4c)
+
+Boys are struggling =E2=80=94 and it=E2=80=99s not about effort. Join Richa=
+rd Reeves for a ParentEd Talk on what=E2=80=99s happening and how parents c=
+an help their boys thrive.
+
+Sign up now =E2=96=BA (https://t.e2ma.net/click/24hdxn/y5fxubf/equeb4c)
+
+MAR
+
+13=E2=80=9315
+
+
+
+7683 SE 27th St. PMB #190 | Mercer Island, WA 98040 US
+
+This email was sent to danielle.mei1989@gmail.com.
+To ensure that you continue receiving our emails,
+please add us to your address book or safe list.
+
+manage your preferences (https://app.e2ma.net/app2/audience/signup/1833983/=
+1782148/824841604/10979050884/?s=3DQojN4GvAaJi6SN_PFRwmOoYJZBMp4KrdK58aGOWE=
+ZRk)
+opt out (https://t.e2ma.net/optout/24hdxn/y5fxubf?s=3Drs8nzvsalzASi-xHinmxg=
+v2taFDtEx3AwlLvyxCJSyY) using TrueRemove(r).
+
+Got this as a forward? Sign up (https://app.e2ma.net/app2/audience/signup/1=
+833983/1782148.824841604/) to receive our future emails.
+email powered by Emma(R)
+http://www.myemma.com/
+
+--==177337277208630==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:sch=
+emas-microsoft-com:office:office" xmlns:v=3D"urn:schemas-microsoft-com:vml"=
+><head>
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+   <o:AllowPNG/>
+   <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--> <!--[if !mso]><!-- -->
+<link href=3D"https://fonts.googleapis.com/css?family=3DRoboto:400,700;Play=
+fair+Display:400,700" rel=3D"stylesheet" type=3D"text/css"/>
+<!--<![endif]-->
+
+
+
+<!-- ParentMap Weekender | Meghan S. 7.2.20 -->
+
+<style type=3D"text/css">
+@media screen and (max-width: 480px) {
+    .e2ma-combo-button, .e2ma-template .mobile-width-nopad {
+        width: 100% !important
+        }
+    #block_kgibcyzi .e2ma-holder.e2ma-follow-holder table, #block_ikwztoow =
+.e2ma-holder.e2ma-follow-holder table, #block_ukzhvlnq .e2ma-holder.e2ma-fo=
+llow-holder table {
+        width: auto !important;
+        margin: 0 auto
+        }
+    #block_ikwztoow .e2ma-holder.e2ma-follow-holder table td, #block_kgibcy=
+zi .e2ma-holder.e2ma-follow-holder table td, #block_ukzhvlnq .e2ma-holder.e=
+2ma-follow-holder table td {
+        display: table-cell !important;
+        float: none !important;
+        width: auto !important;
+        padding-left: 2px !important;
+        padding-right: 2px !important
+        }
+    .e2ma-template html {
+        -webkit-text-size-adjust: none
+        }
+    .e2ma-template .e2ma-combo-content li, .e2ma-template .e2ma-content-blo=
+ck div.e2ma-p-div, .e2ma-template .e2ma-combo-block li, .e2ma-template .e2m=
+a-content-block li, .e2ma-template .e2ma-combo-block div.e2ma-p-div, .e2ma-=
+template .e2ma-combo-content div.e2ma-p-div {
+        font-size: 16px !important
+        }
+    .e2ma-template .e2ma-holder table, .e2ma-template .e2ma-holder table td=
+ {
+        display: table !important;
+        float: none !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important
+        }
+    .e2ma-template .e2ma-single-column-layout table {
+        float: none !important;
+        margin: 0 auto
+        }
+    .e2ma-template .e2ma-unsubscribe span {
+        font-size: 12px !important
+        }
+    .e2ma-template .social-sharing {
+        text-align: center !important;
+        padding-bottom: 10px
+        }
+    .e2ma-template .scale img, .e2ma-template .e2ma-layout-column-content i=
+mg, .e2ma-template .e2ma-layout-column-sidebar img, .e2ma-template .e2ma-si=
+ngle-column-layout img, .e2ma-template .editable_image img, .e2ma-template =
+.e2ma-layout-column-sidebar-2 img, .e2ma-template .e2ma-layout-column-sideb=
+ar-3 img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto
+        }
+    .e2ma-template .footer-social img {
+        width: 44px !important;
+        height: 43px !important;
+        margin: 0 auto
+        }
+    .e2ma-template .share-block {
+        text-align: center !important;
+        margin: 0 auto !important
+        }
+    .e2ma-template .footer-text {
+        text-align: center !important
+        }
+    .e2ma-template .mobile-width {
+        width: 100% !important;
+        padding-left: 10px;
+        padding-right: 10px
+        }
+    .e2ma-template .stack, .e2ma-template .e2ma-layout-column-sidebar-3, .e=
+2ma-template .e2ma-layout-column-content, .e2ma-template .e2ma-layout-colum=
+n-sidebar, .e2ma-template .e2ma-layout-column-sidebar-2 {
+        display: block !important;
+        width: 100% !important
+        }
+    .e2ma-template .hide {
+        display: none !important
+        }
+    .e2ma-template .center img, .e2ma-template .center {
+        text-align: center !important;
+        margin: 0 auto
+        }
+    .e2ma-template .scale-up img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto
+        }
+    .e2ma-template .addpad {
+        padding: 10px 0 !important
+        }
+    .e2ma-template .addpad-top {
+        padding-top: 10px !important
+        }
+    .e2ma-template .sanpad {
+        padding: 0 !important
+        }
+    .e2ma-template .sanborder {
+        border: none !important
+        }
+    .e2ma-template .addpad-head {
+        padding-top: 20px !important;
+        padding-bottom: 15px !important
+        }
+    .e2ma-template .addpad-more {
+        padding-top: 25px !important
+        }
+    .e2ma-template .headerwidth {
+        width: auto !important
+        }
+    }
+.e2ma-template h1, .e2ma-template h2, .e2ma-template h3, .e2ma-template h4,=
+ .e2ma-template h5, .e2ma-template h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+    }
+.e2ma-template h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #003329
+    }
+.e2ma-template h2 {
+    font-family: "Roboto", Trebuchet, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #003329
+    }
+.e2ma-template h3 {
+    font-family: "Roboto", Trebuchet, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F05A26
+    }
+.e2ma-template h4 {
+    font-family: "Roboto", Trebuchet, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #003329
+    }
+.e2ma-template .e2ma-content-block div.e2ma-p-div, .e2ma-template .e2ma-com=
+bo-block div.e2ma-p-div, .e2ma-template .e2ma-combo-content div.e2ma-p-div,=
+ .e2ma-template .e2ma-content-block li, .e2ma-template .e2ma-combo-block li=
+, .e2ma-template .e2ma-combo-content li {
+    font-family: "Roboto", Trebuchet, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000
+    }
+.e2ma-template #template_container a, .e2ma-template .link {
+    color: #2ad494;
+    text-decoration: none;
+    font-weight: bold
+    }
+.e2ma-template #date_container a, .e2ma-template .link {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold
+    }
+.e2ma-template blockquote {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-style: italic
+    }
+.e2ma-template blockquote div.e2ma-p-div {
+    margin-bottom: 0
+    }
+.e2ma-template .editable_image img {
+    display: block;
+    border: 0
+    }
+.e2ma-template .e2ma-unsubscribe {
+    padding-bottom: 10px
+    }
+</style><meta content=3D"telephone=3Dno" name=3D"format-detection"></head><=
+body class=3D"e2ma-design-option-backdrop e2ma-template" data-e2ma-styles=
+=3D"background" style=3D"-webkit-font-smoothing: antialiased;padding: 0;wid=
+th: 100% !important;-moz-osx-font-smoothing: grayscale;margin: 0;background=
+-color: #fff">
+
+<div style=3D"display: none !important; mso-hide:all;">Plus, a free family =
+concert, a St. Paddy&#39;s parade and a Pi Day pizza deal.</div>
+<img style=3D"display: none !important; mso-hide:all;" src=3D"https://image=
+s.e2ma.net/images/spacer.gif" width=3D"1" height=3D"1" alt=3D"Plus, a free =
+family concert, a St. Paddy&#39;s parade and a Pi Day pizza deal.">
+
+
+
+
+
+<div class=3D"e2ma-design-option-backdrop" data-e2ma-styles=3D"background" =
+style=3D"-webkit-font-smoothing: antialiased;padding: 0;width: 100% !import=
+ant;-moz-osx-font-smoothing: grayscale;margin: 0;background-color: #fff">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" data-e2ma-color=3D"=
+#003329, #6ac4a0, #f05a26, #ced7d5, #238456" role=3D"presentation" style=3D=
+"font-family: Arial, Helvetica, sans-serif;font-size: 12px;-moz-osx-font-sm=
+oothing: grayscale; -webkit-font-smoothing: antialiased" width=3D"100%">
+<tbody><tr>
+<td align=3D"center" style=3D"padding-top: 20px" valign=3D"top"><table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Arial, H=
+elvetica, sans-serif;font-size: 12px" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"hide" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size=
+: 12px" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"height: 72px"><img alt=3D"" border=3D"0" height=3D"72" src=3D"=
+https://images.e2ma.net/0/images/templates/spacer.gif" style=3D"display:blo=
+ck" width=3D"1"></td>
+</tr>
+<tr>
+<td style=3D"height: 39px; background-color: #d3e8de"><img alt=3D"" border=
+=3D"0" height=3D"39" src=3D"https://images.e2ma.net/0/images/templates/spac=
+er.gif" style=3D"display:block" width=3D"1"></td>
+</tr>
+</tbody>
+</table></td>
+<td align=3D"center" class=3D"mobile-width-nopad" style=3D"width: 640px" va=
+lign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100=
+%">
+<tbody>
+</tbody>
+<tbody>
+<tr>
+<td class=3D"stack center" style=3D"width: 284px" valign=3D"bottom">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-famil=
+y: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"newwidth" style=3D"width: 5px" valign=3D"top"><table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Arial, Helvet=
+ica, sans-serif;font-size: 12px" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"height: 72px"><img alt=3D"" border=3D"0" height=3D"72" src=3D"=
+https://images.e2ma.net/0/images/templates/spacer.gif" style=3D"display:blo=
+ck" width=3D"1"></td>
+</tr>
+<tr>
+<td style=3D"height: 39px; background-color: #d3e8de"><img alt=3D"" border=
+=3D"0" height=3D"39" src=3D"https://images.e2ma.net/0/images/templates/spac=
+er.gif" style=3D"display:block" width=3D"1"></td>
+</tr>
+</tbody>
+</table></td>
+<td style=3D"width: 154px" valign=3D"bottom"><a href=3D"https://t.e2ma.net/=
+click/24hdxn/y5fxubf/ixmcb4c" style=3D"font-weight: normal;font-weight: nor=
+mal" target=3D"_blank"><img alt=3D"Parent Map" border=3D"0" height=3D"111" =
+src=3D"https://images.e2ma.net/1782148/images/templates/Untitled-1_03.png" =
+style=3D"display: block" width=3D"154"></a></td>
+<td class=3D"headerwidth" style=3D"width: 130px" valign=3D"bottom"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Arial=
+, Helvetica, sans-serif;font-size: 12px" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"height: 72px"><table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px"=
+ width=3D"100%">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td align=3D"center" style=3D"width: 80px"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Arial, Hel=
+vetica, sans-serif;font-size: 12px;width: 80px">
+<tbody>
+<tr>
+<td style=3D"background-color: #f05a26; width: 3px; line-height: 0px; font-=
+size: 0px"><img alt=3D"" border=3D"0" height=3D"1" src=3D"https://images.e2=
+ma.net/0/images/templates/spacer.gif" style=3D"display:block" width=3D"3"><=
+/td>
+<td id=3D"date_container" style=3D"font-family: 'Roboto', Trebuchet, Arial,=
+ sans-serif; font-size: 18px; line-height: 1.2; color: #000000; font-weight=
+: bold; text-align: center; padding: 3px 0px">
+<div class=3D"e2ma-tag-outer"><div class=3D"e2ma-p-div" style=3D"font-size:=
+ inherit;line-height: 21.6px; text-align: center">MAR</div>
+<div class=3D"e2ma-p-div" style=3D"font-size: inherit;line-height: 21.6px; =
+text-align: center">13&ndash;15</div>
+</div>
+</td>
+<td style=3D"background-color: #f05a26; width: 3px; line-height: 0px; font-=
+size: 0px"><img alt=3D"" border=3D"0" height=3D"1" src=3D"https://images.e2=
+ma.net/0/images/templates/spacer.gif" style=3D"display:block" width=3D"3"><=
+/td>
+</tr>
+</tbody>
+</table></td>
+<td style=3D"width: 5px; font-size: 0px; line-height: 0px">&nbsp;</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td style=3D"height: 39px; background-color: #d3e8de"><img alt=3D"" border=
+=3D"0" height=3D"39" src=3D"https://images.e2ma.net/0/images/templates/spac=
+er.gif" style=3D"display:block" width=3D"1"></td>
+</tr>
+</tbody>
+</table></td>
+<td class=3D"hide" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size=
+: 12px" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"height: 72px"><img alt=3D"" border=3D"0" height=3D"72" src=3D"=
+https://images.e2ma.net/0/images/templates/spacer.gif" style=3D"display:blo=
+ck" width=3D"1"></td>
+</tr>
+<tr>
+<td style=3D"height: 39px; background-color: #d3e8de"><img alt=3D"" border=
+=3D"0" height=3D"39" src=3D"https://images.e2ma.net/0/images/templates/spac=
+er.gif" style=3D"display:block" width=3D"1"></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table></td>
+<td class=3D"stack center" valign=3D"bottom"><table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"font-family: Arial, Helvetica, sans-seri=
+f;font-size: 12px" width=3D"100%">
+<tbody>
+<tr>
+<td><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-f=
+amily: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"hide">&nbsp;</td>
+<td class=3D"center addpad-head editable_image" style=3D"width: 244px; padd=
+ing-bottom: 25px">
+<div class=3D"ff-max-width">
+<a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/ypncb4c" style=3D"font-w=
+eight: normal;font-weight: normal">
+<img alt=3D"weekender-east" height=3D"23.5" src=3D"https://d31hzlhk6di2h5.c=
+loudfront.net/20260312/eb/bf/05/e2/1d854726c522bc2bcbc42332_488x46.png" sty=
+le=3D"display: block;border: 0;display: block;border: 0" width=3D"244">
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td class=3D"hide" style=3D"height: 39px; background-color: #d3e8de"><img a=
+lt=3D"" border=3D"0" height=3D"39" src=3D"https://images.e2ma.net/0/images/=
+templates/spacer.gif" style=3D"display:block" width=3D"1"></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+<tbody>
+<tr></tr>
+</tbody>
+</table></td>
+<td class=3D"hide" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size=
+: 12px" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"height: 72px"><img alt=3D"" border=3D"0" height=3D"72" src=3D"=
+https://images.e2ma.net/0/images/templates/spacer.gif" style=3D"display:blo=
+ck" width=3D"1"></td>
+</tr>
+<tr>
+<td style=3D"height: 39px; background-color: #d3e8de"><img alt=3D"" border=
+=3D"0" height=3D"39" src=3D"https://images.e2ma.net/0/images/templates/spac=
+er.gif" style=3D"display:block" width=3D"1"></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td align=3D"center" class=3D"sanpad" style=3D"padding:15px 0px" valign=3D"=
+top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"mobile-wid=
+th-nopad" id=3D"template_container" role=3D"presentation" style=3D"font-fam=
+ily: Arial, Helvetica, sans-serif;font-size: 12px;width:640px">
+<tbody><tr>
+<td align=3D"left" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"mobile-wid=
+th-nopad" role=3D"presentation" style=3D"font-family: Arial, Helvetica, san=
+s-serif;font-size: 12px;width:640px">
+<tbody><tr>
+<td align=3D"left" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" class=3D"e2ma-row-region-content e2ma-section" style=3D"font=
+-family: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%"><tbod=
+y><tr><td class=3D"e2ma-layout-column-content">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_fihtzbtl" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:10px"></td> </tr> <tr> <td class=3D"e2ma-wrapper" style=3D"padding-righ=
+t: 10px;padding-bottom: 5px;padding-left: 10px" valign=3D"top"> <table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Arial, H=
+elvetica, sans-serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=
+=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent" valign=
+=3D"top"> <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px" =
+width=3D"1%"> <tbody><tr> <td style=3D" padding: 10px 30px 10px 10px; " val=
+ign=3D"top" width=3D"1%"> <div align=3D"center" style=3D"mso-table-lspace:0=
+;mso-table-rspace:9"> <a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/ei=
+ocb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;text=
+-decoration: none;font-weight: bold;color: #2ad494;text-decoration: none;fo=
+nt-weight: bold" target=3D"_blank"> <img alt=3D"petting-zoo-image" border=
+=3D"0" height=3D"199" src=3D"https://d31hzlhk6di2h5.cloudfront.net/20260312=
+/8c/c0/cd/b7/5ae9b8d859c1ed8d82268597_600x398.png" style=3D"display: block"=
+ width=3D"300"> </a> </div>
+</td> </tr> </tbody></table> <div class=3D"e2ma-combo-content e2ma-content-=
+block" style=3D"font-size: 12px;line-height: 1.5">
+<h2 style=3D"display: block;font-size: 24px;font-weight: bold;color: #444;m=
+argin: 0 0 18px 0;line-height: 1.3;margin: 0;padding: 0;border: 0;font-size=
+: 100%;font: inherit;vertical-align: baseline;font-family: 'Roboto', Trebuc=
+het, Arial, Helvetica, sans-serif;font-size: 24px;font-weight: bold;color: =
+#003329;margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertic=
+al-align: baseline;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans=
+-serif;font-size: 24px;font-weight: bold;color: #003329;line-height: 31.2px=
+"><a data-name=3D"petting-zoo-headline" data-type=3D"url" href=3D"https://t=
+.e2ma.net/click/24hdxn/y5fxubf/uapcb4c" style=3D"font-weight: normal;font-w=
+eight: normal;color: #2ad494;text-decoration: none;font-weight: bold;color:=
+ #2ad494;text-decoration: none;font-weight: bold;color: rgb(0, 51, 41)">Bes=
+t farms for up-close animal e</a>ncounters</h2><div class=3D"e2ma-p-div" st=
+yle=3D"display: block;margin-bottom: 10px;font-size: 12px;font-weight: norm=
+al;line-height: 1.5;font-family: 'Roboto', Trebuchet, Arial, Helvetica, san=
+s-serif;font-size: 16px;color: #000;font-family: 'Roboto', Trebuchet, Arial=
+, Helvetica, sans-serif;font-size: 16px;color: #000;font-family: 'Roboto', =
+Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font-fa=
+mily: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;col=
+or: #000">Gather your gaggle to meet pigs, goats, cows, kangaroos and more =
+at these adorable animal spots, many free!<br></div>
+<div class=3D"e2ma-p-div" style=3D"display: block;margin-bottom: 10px;font-=
+size: 12px;font-weight: normal;line-height: 1.5;font-family: 'Roboto', Treb=
+uchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family=
+: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: =
+#000;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-si=
+ze: 16px;color: #000;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sa=
+ns-serif;font-size: 16px;color: #000"><span class=3D"e2ma-style" style=3D"f=
+ont-size: 16px"><strong><a data-name=3D"petting-zoo-more" data-type=3D"url"=
+ href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/a3pcb4c" style=3D"font-wei=
+ght: normal;font-weight: normal;color: #2ad494;text-decoration: none;font-w=
+eight: bold;color: #2ad494;text-decoration: none;font-weight: bold;font-wei=
+ght: inherit">It's baby animal season =E2=96=BA</a></strong></span></div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_gbwujtit" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:5px"></td> </tr> <tr> <td class=3D"e2ma-wrapper" style=3D"padding-right=
+: 10px;padding-bottom: 5px;padding-left: 10px" valign=3D"top"> <table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Arial, He=
+lvetica, sans-serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=
+=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent" valign=
+=3D"top"> <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px" =
+width=3D"1%"> <tbody><tr> <td style=3D" padding: 10px 30px 10px 10px; " val=
+ign=3D"top" width=3D"1%"> <div align=3D"center" style=3D"mso-table-lspace:0=
+;mso-table-rspace:9"> <a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/qv=
+qcb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;text=
+-decoration: none;font-weight: bold;color: #2ad494;text-decoration: none;fo=
+nt-weight: bold" target=3D"_blank"> <img alt=3D"teen-outings-image" border=
+=3D"0" height=3D"199" src=3D"https://d31hzlhk6di2h5.cloudfront.net/20260312=
+/76/e8/ce/0a/d11993f29ef50c7bde9946dd_600x398.png" style=3D"display: block"=
+ width=3D"300"> </a> </div>
+</td> </tr> </tbody></table> <div class=3D"e2ma-combo-content e2ma-content-=
+block" style=3D"font-size: 12px;line-height: 1.5">
+<h2 style=3D"display: block;font-size: 24px;font-weight: bold;color: #444;m=
+argin: 0 0 18px 0;line-height: 1.3;margin: 0;padding: 0;border: 0;font-size=
+: 100%;font: inherit;vertical-align: baseline;font-family: 'Roboto', Trebuc=
+het, Arial, Helvetica, sans-serif;font-size: 24px;font-weight: bold;color: =
+#003329;margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertic=
+al-align: baseline;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans=
+-serif;font-size: 24px;font-weight: bold;color: #003329;line-height: 31.2px=
+"><a data-name=3D"teen-outings-headline" data-type=3D"url" href=3D"https://=
+t.e2ma.net/click/24hdxn/y5fxubf/6nrcb4c" style=3D"font-weight: normal;font-=
+weight: normal;color: #2ad494;text-decoration: none;font-weight: bold;color=
+: #2ad494;text-decoration: none;font-weight: bold;color: rgb(0, 51, 41)">Fa=
+mily outings teens actually won&rsquo;t hate </a></h2><div class=3D"e2ma-p-=
+div" style=3D"display: block;margin-bottom: 10px;font-size: 12px;font-weigh=
+t: normal;line-height: 1.5;font-family: 'Roboto', Trebuchet, Arial, Helveti=
+ca, sans-serif;font-size: 16px;color: #000;font-family: 'Roboto', Trebuchet=
+, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family: 'Ro=
+boto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;=
+font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 1=
+6px;color: #000">Stop the eye roll with simulated flights, concerts, and a =
+brand-new indoor skiing and snowboarding spot.</div>
+<div class=3D"e2ma-p-div" style=3D"display: block;margin-bottom: 10px;font-=
+size: 12px;font-weight: normal;line-height: 1.5;font-family: 'Roboto', Treb=
+uchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family=
+: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: =
+#000;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-si=
+ze: 16px;color: #000;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sa=
+ns-serif;font-size: 16px;color: #000"><span class=3D"e2ma-style" style=3D"f=
+ont-size: 16px"><strong><a data-name=3D"teen-outings-more" data-type=3D"url=
+" href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/mgscb4c" style=3D"font-we=
+ight: normal;font-weight: normal;color: #2ad494;text-decoration: none;font-=
+weight: bold;color: #2ad494;text-decoration: none;font-weight: bold;font-we=
+ight: inherit">Togetherness 2.0 =E2=96=BA</a></strong></span></div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_bwuavizj" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%">
+<tbody><tr>
+<td style=3D"padding-bottom:5px"></td>
+</tr>
+<tr>
+<td class=3D"e2ma-wrapper" style=3D"padding-right: 10px;padding-bottom: 5px=
+;padding-left: 10px" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-famil=
+y: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%">
+<tbody><tr>
+<td class=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent=
+">
+<div style=3D"border-bottom: #ced7d5 solid 1px">
+<img border=3D"0" height=3D"1" src=3D"https://images.e2ma.net/images/spacer=
+.gif" style=3D"display:block" width=3D"1">
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_lhhgjbae" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:5px"></td> </tr> <tr> <td class=3D"e2ma-wrapper e2ma-image-td" style=3D=
+"padding-right: 10px;padding-bottom: 0;padding-left: 10px;font-size: 12px;l=
+ine-height: 1.5" valign=3D"top"> <table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size:=
+ 12px" width=3D"100%"> <tbody><tr> <td class=3D"e2ma-holder" style=3D"paddi=
+ng: 0;background-color: transparent" valign=3D"top"> <div class=3D"e2ma-con=
+tent-block"> <div class=3D"e2ma-p-div" style=3D"display: block;margin-botto=
+m: 10px;font-size: 12px;font-weight: normal;line-height: 1.5;font-family: '=
+Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #00=
+0;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size:=
+ 16px;color: #000;text-align: center; line-height: 16.8px"><i><span class=
+=3D"e2ma-style" style=3D"font-size: 14px">Advertisement</span></i></div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_jhtqpjyn" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:10px"></td> </tr> <tr> <td class=3D"e2ma-wrapper" style=3D"padding-righ=
+t: 10px;padding-bottom: 5px;padding-left: 10px" valign=3D"top"> <table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Arial, H=
+elvetica, sans-serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=
+=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent" valign=
+=3D"top"> <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px" =
+width=3D"1%"> <tbody><tr> <td style=3D" padding: 10px 30px 10px 10px; " val=
+ign=3D"top" width=3D"1%"> <div align=3D"center" style=3D"mso-table-lspace:0=
+;mso-table-rspace:9"> <a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/28=
+scb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;text=
+-decoration: none;font-weight: bold;color: #2ad494;text-decoration: none;fo=
+nt-weight: bold" target=3D"_blank"> <img alt=3D"n1-red-gate-image" border=
+=3D"0" height=3D"200" src=3D"https://d31hzlhk6di2h5.cloudfront.net/20260312=
+/97/ed/39/7b/5f7e7d8eed627e558161bdfb_600x400.jpg" style=3D"display: block"=
+ width=3D"300"> </a> </div>
+</td> </tr> </tbody></table> <div class=3D"e2ma-combo-content e2ma-content-=
+block" style=3D"font-size: 12px;line-height: 1.5">
+<h3 style=3D"display: block;font-size: 18px;font-weight: bold;color: #000;m=
+argin: 0 0 12px 0;line-height: 1.3;margin: 0;padding: 0;border: 0;font-size=
+: 100%;font: inherit;vertical-align: baseline;font-family: 'Roboto', Trebuc=
+het, Arial, Helvetica, sans-serif;font-size: 20px;font-weight: bold;color: =
+#F05A26;margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertic=
+al-align: baseline;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans=
+-serif;font-size: 20px;font-weight: bold;color: #F05A26;line-height: 24px; =
+text-align: left"><span class=3D"e2ma-style" style=3D"color: rgb(0, 85, 129=
+)"><a data-name=3D"n1-red-gate-headline" data-type=3D"url" href=3D"https://=
+t.e2ma.net/click/24hdxn/y5fxubf/i1tcb4c" style=3D"font-weight: normal;font-=
+weight: normal;color: #2ad494;text-decoration: none;font-weight: bold;color=
+: #2ad494;text-decoration: none;font-weight: bold;color: rgb(0, 51, 41); wi=
+dth: 285px; height: 190px">Red Gate Farm Day Camp</a></span></h3><div class=
+=3D"e2ma-p-div" style=3D"display: block;margin-bottom: 10px;font-size: 12px=
+;font-weight: normal;line-height: 1.5;font-family: 'Roboto', Trebuchet, Ari=
+al, Helvetica, sans-serif;font-size: 16px;color: #000;font-family: 'Roboto'=
+, Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font-=
+family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;c=
+olor: #000;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;f=
+ont-size: 16px;color: #000;text-align: left; line-height: 24px">Red Gate Fa=
+rm is an outdoor camp where campers can build their self-confidence by ridi=
+ng and learning horsemanship.</div>
+<div class=3D"e2ma-p-div" style=3D"display: block;margin-bottom: 10px;font-=
+size: 12px;font-weight: normal;line-height: 1.5;font-family: 'Roboto', Treb=
+uchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family=
+: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: =
+#000;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-si=
+ze: 16px;color: #000;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sa=
+ns-serif;font-size: 16px;color: #000;text-align: left"><a data-name=3D"n1-r=
+ed-gate-more" data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y5f=
+xubf/ytucb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad4=
+94;text-decoration: none;font-weight: bold;color: #2ad494;text-decoration: =
+none;font-weight: bold">More =E2=96=BA</a></div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_nvvpntos" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%">
+<tbody><tr>
+<td style=3D"padding-bottom:5px"></td>
+</tr>
+<tr>
+<td class=3D"e2ma-wrapper" style=3D"padding-right: 10px;padding-bottom: 5px=
+;padding-left: 10px" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-famil=
+y: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%">
+<tbody><tr>
+<td class=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent=
+">
+<div style=3D"border-bottom: #ced7d5 solid 1px">
+<img border=3D"0" height=3D"1" src=3D"https://images.e2ma.net/images/spacer=
+.gif" style=3D"display:block" width=3D"1">
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_vwwggchm" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:5px"></td> </tr> <tr> <td class=3D"e2ma-wrapper e2ma-image-td" style=3D=
+"padding-right: 10px;padding-bottom: 5px;padding-left: 10px;font-size: 12px=
+;line-height: 1.5" valign=3D"top"> <table border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-siz=
+e: 12px" width=3D"100%"> <tbody><tr> <td class=3D"e2ma-holder" style=3D"pad=
+ding: 0;background-color: transparent" valign=3D"top"> <div class=3D"e2ma-c=
+ontent-block"> <h1 style=3D"display: block;font-size: 30px;font-weight: bol=
+d;margin: 0;line-height: 1.3;margin: 0;padding: 0;border: 0;font-size: 100%=
+;font: inherit;vertical-align: baseline;font-family: 'Playfair Display', Ge=
+orgia, serif;font-size: 28px;font-weight: bold;color: #003329;margin: 0;pad=
+ding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;fo=
+nt-family: 'Playfair Display', Georgia, serif;font-size: 28px;font-weight: =
+bold;color: #003329;text-align: center"><a data-name=3D"weekender-headline"=
+ data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/emvcb4c"=
+ style=3D"font-weight: normal;font-weight: normal;color: #2ad494;text-decor=
+ation: none;font-weight: bold;color: #2ad494;text-decoration: none;font-wei=
+ght: bold;font-weight: inherit; color: rgb(240, 90, 38)">Meredith&rsquo;s t=
+op 10 weekend picks</a></h1> </div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_kgibcyzi" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:5px"></td> </tr> <tr> <td class=3D"e2ma-wrapper" style=3D"padding-right=
+: 10px;padding-bottom: 5px;padding-left: 10px" valign=3D"top"> <table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Arial, He=
+lvetica, sans-serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=
+=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent" valign=
+=3D"top"> <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"=
+font-family: Arial, Helvetica, sans-serif;font-size: 12px"> <tbody><tr><td =
+valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px"><tbody><tr>=
+ <td class=3D"e2ma-image-td" style=3D"text-align: center; padding: 10px 10p=
+x 10px 10px; " valign=3D"top"> <a href=3D"https://t.e2ma.net/click/24hdxn/y=
+5fxubf/uewcb4c" style=3D"font-weight: normal;font-weight: normal;color: #2a=
+d494;text-decoration: none;font-weight: bold;color: #2ad494;text-decoration=
+: none;font-weight: bold" target=3D"_blank"> <img alt=3D"weekender-headline=
+-image" border=3D"0" height=3D"271" src=3D"https://d31hzlhk6di2h5.cloudfron=
+t.net/20260312/95/71/f5/12/0d00fbdc40fc52b8607b22dc_1200x542.jpg" style=3D"=
+display: block" width=3D"600"> </a> </td> </tr></tbody></table></td></tr> <=
+/tbody></table> </td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_rswktrcs" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=3D"e2ma-wrappe=
+r e2ma-image-td" style=3D"padding-right: 0;padding-bottom: 0;padding-left: =
+0;font-size: 12px;line-height: 1.5" valign=3D"top"> <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Arial, Helvetica, sa=
+ns-serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=3D"e2ma-hol=
+der" style=3D"padding: 5px 20px 5px 20px;background-color: transparent" val=
+ign=3D"top"> <div class=3D"e2ma-content-block">
+<div class=3D"e2ma-p-div" style=3D"display: block;margin-bottom: 10px;font-=
+size: 12px;font-weight: normal;line-height: 1.5;font-family: 'Roboto', Treb=
+uchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family=
+: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: =
+#000">We&rsquo;re finally out of the Big Dark, and I have <a data-name=3D"w=
+eekender-intro" data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y=
+5fxubf/a7wcb4c" style=3D"font-weight: normal;font-weight: normal;color: #2a=
+d494;text-decoration: none;font-weight: bold;color: #2ad494;text-decoration=
+: none;font-weight: bold">10 weekend events</a> that will make the most of =
+the sun setting after 7 p.m. Fill a whole day with a <a data-name=3D"u-dist=
+rict" data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/qzx=
+cb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;text-=
+decoration: none;font-weight: bold;color: #2ad494;text-decoration: none;fon=
+t-weight: bold">tour of the U District</a> that your taste buds will love, =
+or experience the sounds of nature through <a data-name=3D"beethoven" data-=
+type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/6rycb4c" style=
+=3D"font-weight: normal;font-weight: normal;color: #2ad494;text-decoration:=
+ none;font-weight: bold;color: #2ad494;text-decoration: none;font-weight: b=
+old">Beethoven&rsquo;s symphony</a>. Plus, there&rsquo;s a <a data-name=3D"=
+pi-day" data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/m=
+kzcb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;tex=
+t-decoration: none;font-weight: bold;color: #2ad494;text-decoration: none;f=
+ont-weight: bold">brand-new museum</a> to explore and a few other surprises=
+ you won&rsquo;t want to miss. </div>
+<div class=3D"e2ma-p-div" style=3D"display: block;margin-bottom: 10px;font-=
+size: 12px;font-weight: normal;line-height: 1.5;font-family: 'Roboto', Treb=
+uchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family=
+: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: =
+#000;text-align: left"><em>&mdash;&nbsp;Meredith Charaba, family fun editor=
+</em><br>
+</div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer e2ma-button" id=3D"block_zqtbkhao" style=3D"font-family: Arial, Helv=
+etica, sans-serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D=
+"padding-bottom:5px"></td> </tr> <tr> <td class=3D"e2ma-wrapper" style=3D"p=
+adding-right: 10px;padding-bottom: 10px;padding-left: 10px" valign=3D"top">=
+ <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-hold=
+er" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px;padd=
+ing: 0;background-color: transparent" width=3D"100%"> <tbody><tr> <td align=
+=3D"center"> <table class=3D"c-collapsed-table" style=3D"font-family: Arial=
+, Helvetica, sans-serif;font-size: 12px;border-spacing: 0"> <tbody><tr> <td=
+ bgcolor=3D"#003329" style=3D"-webkit-border-radius: 0px; -moz-border-radiu=
+s: 0px; border-radius: 0px; box-sizing: border-box; "> <a href=3D"https://t=
+.e2ma.net/click/24hdxn/y5fxubf/2c0cb4c" style=3D"font-weight: normal;font-w=
+eight: normal;color: #2ad494;text-decoration: none;font-weight: bold;color:=
+ #2ad494;text-decoration: none;font-weight: bold; padding: 12px 18px; font-=
+size: 16px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text=
+-align: center; text-decoration: none; border-radius: 0px; -webkit-border-r=
+adius: 0px; -moz-border-radius: 0px; background-color: #003329; font-style:=
+ normal; font-weight: bold; display: block; border: 1px solid #003329; mso-=
+line-height-rule: exactly; line-height:110%">GET YOUR WEEKEND ON =E2=96=BA<=
+/a> </td> </tr> </tbody></table> </td> </tr> </tbody></table> </td> </tr> <=
+/tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_zmwzikgl" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%">
+<tbody><tr>
+<td style=3D"padding-bottom:5px"></td>
+</tr>
+<tr>
+<td class=3D"e2ma-wrapper" style=3D"padding-right: 10px;padding-bottom: 5px=
+;padding-left: 10px" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-famil=
+y: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%">
+<tbody><tr>
+<td class=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent=
+">
+<div style=3D"border-bottom: #ced7d5 solid 1px">
+<img border=3D"0" height=3D"1" src=3D"https://images.e2ma.net/images/spacer=
+.gif" style=3D"display:block" width=3D"1">
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_snrlgldb" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:5px"></td> </tr> <tr> <td class=3D"e2ma-wrapper e2ma-image-td" style=3D=
+"padding-right: 10px;padding-bottom: 0;padding-left: 10px;font-size: 12px;l=
+ine-height: 1.5" valign=3D"top"> <table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size:=
+ 12px" width=3D"100%"> <tbody><tr> <td class=3D"e2ma-holder" style=3D"paddi=
+ng: 0;background-color: transparent" valign=3D"top"> <div class=3D"e2ma-con=
+tent-block"> <div class=3D"e2ma-p-div" style=3D"display: block;margin-botto=
+m: 10px;font-size: 12px;font-weight: normal;line-height: 1.5;font-family: '=
+Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #00=
+0;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size:=
+ 16px;color: #000;text-align: center; line-height: 16.8px"><i><span class=
+=3D"e2ma-style" style=3D"font-size: 14px">Advertisement</span></i></div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_fogluxbh" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:10px"></td> </tr> <tr> <td class=3D"e2ma-wrapper" style=3D"padding-righ=
+t: 10px;padding-bottom: 5px;padding-left: 10px" valign=3D"top"> <table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Arial, H=
+elvetica, sans-serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=
+=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent" valign=
+=3D"top"> <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px" =
+width=3D"1%"> <tbody><tr> <td style=3D" padding: 10px 30px 10px 10px; " val=
+ign=3D"top" width=3D"1%"> <div align=3D"center" style=3D"mso-table-lspace:0=
+;mso-table-rspace:9"> <a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/i5=
+0cb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;text=
+-decoration: none;font-weight: bold;color: #2ad494;text-decoration: none;fo=
+nt-weight: bold" target=3D"_blank"> <img alt=3D"n2-samena-image" border=3D"=
+0" height=3D"200" src=3D"https://d31hzlhk6di2h5.cloudfront.net/20260312/69/=
+83/2c/64/96bfc80780feefbc50dd3493_600x400.png" style=3D"display: block" wid=
+th=3D"300"> </a> </div>
+</td> </tr> </tbody></table> <div class=3D"e2ma-combo-content e2ma-content-=
+block" style=3D"font-size: 12px;line-height: 1.5"> <h3 style=3D"display: bl=
+ock;font-size: 18px;font-weight: bold;color: #000;margin: 0 0 12px 0;line-h=
+eight: 1.3;margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;ver=
+tical-align: baseline;font-family: 'Roboto', Trebuchet, Arial, Helvetica, s=
+ans-serif;font-size: 20px;font-weight: bold;color: #F05A26;margin: 0;paddin=
+g: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;font-=
+family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 20px;f=
+ont-weight: bold;color: #F05A26;line-height: 24px; text-align: left"><span =
+class=3D"e2ma-style" style=3D"color: rgb(0, 85, 129)"><a data-name=3D"n2-sa=
+mena-headline" data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y5=
+fxubf/yx1cb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad=
+494;text-decoration: none;font-weight: bold;color: #2ad494;text-decoration:=
+ none;font-weight: bold;color: rgb(0, 51, 41); width: 285px; height: 190px"=
+>Join the Samena Club</a></span></h3><div class=3D"e2ma-p-div" style=3D"dis=
+play: block;margin-bottom: 10px;font-size: 12px;font-weight: normal;line-he=
+ight: 1.5;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;fo=
+nt-size: 16px;color: #000;font-family: 'Roboto', Trebuchet, Arial, Helvetic=
+a, sans-serif;font-size: 16px;color: #000;font-family: 'Roboto', Trebuchet,=
+ Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family: 'Rob=
+oto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;t=
+ext-align: left; line-height: 24px">Wellness. Education. Fun. Get in some l=
+aps, keep the kids active or join a fitness class &mdash; there&rsquo;s som=
+ething for everyone at Samena!</div>
+<div class=3D"e2ma-p-div" style=3D"display: block;margin-bottom: 10px;font-=
+size: 12px;font-weight: normal;line-height: 1.5;font-family: 'Roboto', Treb=
+uchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family=
+: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: =
+#000;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-si=
+ze: 16px;color: #000;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sa=
+ns-serif;font-size: 16px;color: #000;text-align: left"><a data-name=3D"n2-s=
+amena-more" data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y5fxu=
+bf/eq2cb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494=
+;text-decoration: none;font-weight: bold;color: #2ad494;text-decoration: no=
+ne;font-weight: bold">More&nbsp;=E2=96=BA</a></div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_ughnzxwh" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%">
+<tbody><tr>
+<td style=3D"padding-bottom:5px"></td>
+</tr>
+<tr>
+<td class=3D"e2ma-wrapper" style=3D"padding-right: 10px;padding-bottom: 5px=
+;padding-left: 10px" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-famil=
+y: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%">
+<tbody><tr>
+<td class=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent=
+">
+<div style=3D"border-bottom: #ced7d5 solid 1px">
+<img border=3D"0" height=3D"1" src=3D"https://images.e2ma.net/images/spacer=
+.gif" style=3D"display:block" width=3D"1">
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_zqczdtli" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:10px"></td> </tr> <tr> <td class=3D"e2ma-wrapper e2ma-image-td" style=
+=3D"padding-right: 10px;padding-bottom: 10px;padding-left: 10px;font-size: =
+12px;line-height: 1.5" valign=3D"top"> <table border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font=
+-size: 12px" width=3D"100%"> <tbody><tr> <td class=3D"e2ma-holder" style=3D=
+"padding: 0;background-color: transparent" valign=3D"top"> <div class=3D"e2=
+ma-content-block"> <h1 style=3D"display: block;font-size: 30px;font-weight:=
+ bold;margin: 0;line-height: 1.3;margin: 0;padding: 0;border: 0;font-size: =
+100%;font: inherit;vertical-align: baseline;font-family: 'Playfair Display'=
+, Georgia, serif;font-size: 28px;font-weight: bold;color: #003329;margin: 0=
+;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baselin=
+e;font-family: 'Playfair Display', Georgia, serif;font-size: 28px;font-weig=
+ht: bold;color: #003329;text-align: center"><a data-name=3D"weekender-headl=
+ine" data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/ui3c=
+b4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;text-d=
+ecoration: none;font-weight: bold;color: #2ad494;text-decoration: none;font=
+-weight: bold;font-weight: inherit; color: rgb(240, 90, 38)">5 things to do=
+ with the kids this weekend</a></h1> </div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_ndpghody" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=3D"e2ma-wrappe=
+r" style=3D"padding-right: 0;padding-bottom: 0;padding-left: 0" valign=3D"t=
+op"> <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-=
+family: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%"> <tbod=
+y><tr> <td class=3D"e2ma-holder" style=3D"padding: 5px;background-color: tr=
+ansparent" valign=3D"top"> <table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px"=
+ width=3D"100%"> <tbody><tr> <td style=3D" padding: 0px 0px 5px 0px; " vali=
+gn=3D"top" width=3D"100%"> <div align=3D"center" style=3D"mso-table-lspace:=
+0;mso-table-rspace:9"> <a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/a=
+b4cb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;tex=
+t-decoration: none;font-weight: bold;color: #2ad494;text-decoration: none;f=
+ont-weight: bold" target=3D"_blank"> <img alt=3D"u-district-number" border=
+=3D"0" height=3D"40" src=3D"https://d31hzlhk6di2h5.cloudfront.net/20260312/=
+e6/35/9f/8d/a9efd0025dc8627425b227a9_80x80.png" style=3D"display: block" wi=
+dth=3D"40"> </a> </div>
+</td> </tr> </tbody></table> <div class=3D"e2ma-combo-content e2ma-content-=
+block" style=3D"font-size: 12px;line-height: 1.5"> <div class=3D"e2ma-p-div=
+" style=3D"display: block;margin-bottom: 10px;font-size: 12px;font-weight: =
+normal;line-height: 1.5;font-family: 'Roboto', Trebuchet, Arial, Helvetica,=
+ sans-serif;font-size: 16px;color: #000;font-family: 'Roboto', Trebuchet, A=
+rial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family: 'Robot=
+o', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;fon=
+t-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px=
+;color: #000;text-align: center"><span class=3D"e2ma-style" style=3D"font-s=
+ize: 16px">&nbsp;Celebrate the blossoming cherry trees with special treats =
+and deals from 90 businesses during this <a data-name=3D"u-district-calenda=
+r" data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/q34cb4=
+c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;text-dec=
+oration: none;font-weight: bold;color: #2ad494;text-decoration: none;font-w=
+eight: bold"> spring-themed festival<span class=3D"e2ma-style" style=3D"col=
+or: rgb(0, 51, 41)"></span></a>. <strong> (FRI.&ndash;SUN.)</strong></span>=
+</div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_bxxulrmf" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=3D"e2ma-wrappe=
+r" style=3D"padding-right: 0;padding-bottom: 0;padding-left: 0" valign=3D"t=
+op"> <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-=
+family: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%"> <tbod=
+y><tr> <td class=3D"e2ma-holder" style=3D"padding: 5px;background-color: tr=
+ansparent" valign=3D"top"> <table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px"=
+ width=3D"100%"> <tbody><tr> <td style=3D" padding: 0px 0px 5px 0px; " vali=
+gn=3D"top" width=3D"100%"> <div align=3D"center" style=3D"mso-table-lspace:=
+0;mso-table-rspace:9"> <a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/6=
+v5cb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;tex=
+t-decoration: none;font-weight: bold;color: #2ad494;text-decoration: none;f=
+ont-weight: bold" target=3D"_blank"> <img alt=3D"street-party-number" borde=
+r=3D"0" height=3D"40" src=3D"https://d31hzlhk6di2h5.cloudfront.net/20260312=
+/d7/6b/9a/3f/5fa345df68e337c8097b01a3_80x80.png" style=3D"display: block" w=
+idth=3D"40"> </a> </div>
+</td> </tr> </tbody></table> <div class=3D"e2ma-combo-content e2ma-content-=
+block" style=3D"font-size: 12px;line-height: 1.5"> <div class=3D"e2ma-p-div=
+" style=3D"display: block;margin-bottom: 10px;font-size: 12px;font-weight: =
+normal;line-height: 1.5;font-family: 'Roboto', Trebuchet, Arial, Helvetica,=
+ sans-serif;font-size: 16px;color: #000;font-family: 'Roboto', Trebuchet, A=
+rial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family: 'Robot=
+o', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;fon=
+t-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px=
+;color: #000;text-align: center"><span class=3D"e2ma-style" style=3D"font-s=
+ize: 16px">Shamrock and roll at this&nbsp;<a data-name=3D"street-party-cale=
+ndar" data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/mo6=
+cb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;text-=
+decoration: none;font-weight: bold;color: #2ad494;text-decoration: none;fon=
+t-weight: bold">festive street party</a>&nbsp;</span><span class=3D"e2ma-st=
+yle" style=3D"color: rgb(0, 51, 41)">that brings balloon twisting, face pai=
+nting, a DJ and more to a fave shopping center.&nbsp;<strong>(SAT.)</strong=
+></span></div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_ufwgxhzh" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=3D"e2ma-wrappe=
+r" style=3D"padding-right: 0;padding-bottom: 0;padding-left: 0" valign=3D"t=
+op"> <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-=
+family: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%"> <tbod=
+y><tr> <td class=3D"e2ma-holder" style=3D"padding: 5px;background-color: tr=
+ansparent" valign=3D"top"> <table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px"=
+ width=3D"100%"> <tbody><tr> <td style=3D" padding: 0px 0px 5px 0px; " vali=
+gn=3D"top" width=3D"100%"> <div align=3D"center" style=3D"mso-table-lspace:=
+0;mso-table-rspace:9"> <a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/2=
+g7cb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;tex=
+t-decoration: none;font-weight: bold;color: #2ad494;text-decoration: none;f=
+ont-weight: bold" target=3D"_blank"> <img alt=3D"shorelake-number" border=
+=3D"0" height=3D"40" src=3D"https://d31hzlhk6di2h5.cloudfront.net/20260312/=
+37/fc/bb/b4/efc082a718fa6d5a0098b48d_80x80.png" style=3D"display: block" wi=
+dth=3D"40"> </a> </div>
+</td> </tr> </tbody></table> <div class=3D"e2ma-combo-content e2ma-content-=
+block" style=3D"font-size: 12px;line-height: 1.5"> <div class=3D"e2ma-p-div=
+" style=3D"display: block;margin-bottom: 10px;font-size: 12px;font-weight: =
+normal;line-height: 1.5;font-family: 'Roboto', Trebuchet, Arial, Helvetica,=
+ sans-serif;font-size: 16px;color: #000;font-family: 'Roboto', Trebuchet, A=
+rial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family: 'Robot=
+o', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;fon=
+t-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px=
+;color: #000;text-align: center"><span class=3D"e2ma-style" style=3D"font-s=
+ize: 16px">Craft a paper lantern, watch a lion dance and kung fu performanc=
+es, and welcome the Year of the Horse at this<a data-name=3D"shorelake-cale=
+ndar" data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/i97=
+cb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;text-=
+decoration: none;font-weight: bold;color: #2ad494;text-decoration: none;fon=
+t-weight: bold"> vibrant celebration</a>. </span><span class=3D"e2ma-style"=
+ style=3D"color: rgb(0, 51, 41)"><strong>(SAT.)</strong></span></div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_yjpvuiqu" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=3D"e2ma-wrappe=
+r" style=3D"padding-right: 0;padding-bottom: 0;padding-left: 0" valign=3D"t=
+op"> <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-=
+family: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%"> <tbod=
+y><tr> <td class=3D"e2ma-holder" style=3D"padding: 5px;background-color: tr=
+ansparent" valign=3D"top"> <table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px"=
+ width=3D"100%"> <tbody><tr> <td style=3D" padding: 0px 0px 5px 0px; " vali=
+gn=3D"top" width=3D"100%"> <div align=3D"center" style=3D"mso-table-lspace:=
+0;mso-table-rspace:9"> <a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/y=
+18cb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;tex=
+t-decoration: none;font-weight: bold;color: #2ad494;text-decoration: none;f=
+ont-weight: bold" target=3D"_blank"> <img alt=3D"irish-number" border=3D"0"=
+ height=3D"40" src=3D"https://d31hzlhk6di2h5.cloudfront.net/20260312/22/b8/=
+29/9b/062280cb66a26ce8922d674d_80x80.png" style=3D"display: block" width=3D=
+"40"> </a> </div>
+</td> </tr> </tbody></table> <div class=3D"e2ma-combo-content e2ma-content-=
+block" style=3D"font-size: 12px;line-height: 1.5"> <div class=3D"e2ma-p-div=
+" style=3D"display: block;margin-bottom: 10px;font-size: 12px;font-weight: =
+normal;line-height: 1.5;font-family: 'Roboto', Trebuchet, Arial, Helvetica,=
+ sans-serif;font-size: 16px;color: #000;font-family: 'Roboto', Trebuchet, A=
+rial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family: 'Robot=
+o', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;fon=
+t-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px=
+;color: #000;text-align: center"><span class=3D"e2ma-style" style=3D"font-s=
+ize: 16px">Indulge in traditional Irish food, catch a few dance performance=
+s and celebrate St. Patrick&rsquo;s Day weekend at this<a data-name=3D"iris=
+h-calendar" data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y5fxu=
+bf/eu9cb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494=
+;text-decoration: none;font-weight: bold;color: #2ad494;text-decoration: no=
+ne;font-weight: bold"> free festival</a>. </span><span class=3D"e2ma-style"=
+ style=3D"color: rgb(0, 51, 41)"><strong>(SAT.&ndash;SUN.)</strong></span><=
+/div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_sdiwujgb" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=3D"e2ma-wrappe=
+r" style=3D"padding-right: 0;padding-bottom: 0;padding-left: 0" valign=3D"t=
+op"> <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-=
+family: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%"> <tbod=
+y><tr> <td class=3D"e2ma-holder" style=3D"padding: 5px;background-color: tr=
+ansparent" valign=3D"top"> <table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px"=
+ width=3D"100%"> <tbody><tr> <td style=3D" padding: 0px 0px 5px 0px; " vali=
+gn=3D"top" width=3D"100%"> <div align=3D"center" style=3D"mso-table-lspace:=
+0;mso-table-rspace:9"> <a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/u=
+madb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;tex=
+t-decoration: none;font-weight: bold;color: #2ad494;text-decoration: none;f=
+ont-weight: bold" target=3D"_blank"> <img alt=3D"springfest-number" border=
+=3D"0" height=3D"40" src=3D"https://d31hzlhk6di2h5.cloudfront.net/20260312/=
+db/bf/c9/7d/1171ef4687ca97d54695ba68_80x80.png" style=3D"display: block" wi=
+dth=3D"40"> </a> </div>
+</td> </tr> </tbody></table> <div class=3D"e2ma-combo-content e2ma-content-=
+block" style=3D"font-size: 12px;line-height: 1.5">
+<div class=3D"e2ma-p-div" style=3D"display: block;margin-bottom: 10px;font-=
+size: 12px;font-weight: normal;line-height: 1.5;font-family: 'Roboto', Treb=
+uchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family=
+: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: =
+#000;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-si=
+ze: 16px;color: #000;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sa=
+ns-serif;font-size: 16px;color: #000;text-align: center">Let the kids get c=
+reative with arts and crafts, a collaborative mural, and even a scavenger h=
+unt at a local library&rsquo;s<span style=3D"box-sizing: border-box; text-a=
+lign: left">&nbsp;</span><a data-name=3D"springfest-calendar" data-type=3D"=
+url" href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/afbdb4c" style=3D"font=
+-weight: normal;font-weight: normal;color: #2ad494;text-decoration: none;fo=
+nt-weight: bold;color: #2ad494;text-decoration: none;font-weight: bold">spr=
+ing extravaganza</a>.<span class=3D"e2ma-style" style=3D"font-size: 16px"><=
+span class=3D"e2ma-style" style=3D"color: rgb(185, 17, 34)"><span class=3D"=
+e2ma-style" style=3D"color: rgb(0, 51, 41)"> </span><span class=3D"e2ma-sty=
+le" style=3D"color: rgb(0, 51, 41)"><strong>(SUN.)</strong></span></span></=
+span></div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer e2ma-button" id=3D"block_omalylcp" style=3D"font-family: Arial, Helv=
+etica, sans-serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D=
+"padding-bottom:5px"></td> </tr> <tr> <td class=3D"e2ma-wrapper" style=3D"p=
+adding-right: 10px;padding-bottom: 15px;padding-left: 10px" valign=3D"top">=
+ <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-hold=
+er" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px;padd=
+ing: 0;background-color: transparent" width=3D"100%"> <tbody><tr> <td align=
+=3D"center"> <table class=3D"c-collapsed-table" style=3D"font-family: Arial=
+, Helvetica, sans-serif;font-size: 12px;border-spacing: 0"> <tbody><tr> <td=
+ bgcolor=3D"#003329" style=3D"-webkit-border-radius: 0px; -moz-border-radiu=
+s: 0px; border-radius: 0px; box-sizing: border-box; "> <a href=3D"https://t=
+.e2ma.net/click/24hdxn/y5fxubf/q7bdb4c" style=3D"font-weight: normal;font-w=
+eight: normal;color: #2ad494;text-decoration: none;font-weight: bold;color:=
+ #2ad494;text-decoration: none;font-weight: bold; padding: 12px 18px; font-=
+size: 16px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text=
+-align: center; text-decoration: none; border-radius: 0px; -webkit-border-r=
+adius: 0px; -moz-border-radius: 0px; background-color: #003329; font-style:=
+ normal; font-weight: bold; display: block; border: 1px solid #003329; mso-=
+line-height-rule: exactly; line-height:110%">EVENTS EVERY DAY OF THE WEEK =
+=E2=96=BA</a> </td> </tr> </tbody></table> </td> </tr> </tbody></table> </t=
+d> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_ncivegvz" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%">
+<tbody><tr>
+<td style=3D"padding-bottom:5px"></td>
+</tr>
+<tr>
+<td class=3D"e2ma-wrapper" style=3D"padding-right: 10px;padding-bottom: 5px=
+;padding-left: 10px" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-famil=
+y: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%">
+<tbody><tr>
+<td class=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent=
+">
+<div style=3D"border-bottom: #d8d8d7 solid 1px">
+<img border=3D"0" height=3D"1" src=3D"https://images.e2ma.net/images/spacer=
+.gif" style=3D"display:block" width=3D"1">
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_vpuxohyb" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:5px"></td> </tr> <tr> <td class=3D"e2ma-wrapper e2ma-image-td" style=3D=
+"padding-right: 10px;padding-bottom: 0;padding-left: 10px;font-size: 12px;l=
+ine-height: 1.5" valign=3D"top"> <table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size:=
+ 12px" width=3D"100%"> <tbody><tr> <td class=3D"e2ma-holder" style=3D"paddi=
+ng: 0;background-color: transparent" valign=3D"top"> <div class=3D"e2ma-con=
+tent-block"> <div class=3D"e2ma-p-div" style=3D"display: block;margin-botto=
+m: 10px;font-size: 12px;font-weight: normal;line-height: 1.5;font-family: '=
+Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #00=
+0;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size:=
+ 16px;color: #000;text-align: center; line-height: 16.8px"><i><span class=
+=3D"e2ma-style" style=3D"font-size: 14px">Advertisement</span></i></div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_klgncfcn" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:10px"></td> </tr> <tr> <td class=3D"e2ma-wrapper" style=3D"padding-righ=
+t: 10px;padding-bottom: 5px;padding-left: 10px" valign=3D"top"> <table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Arial, H=
+elvetica, sans-serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=
+=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent" valign=
+=3D"top"> <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px" =
+width=3D"1%"> <tbody><tr> <td style=3D" padding: 10px 30px 10px 10px; " val=
+ign=3D"top" width=3D"1%"> <div align=3D"center" style=3D"mso-table-lspace:0=
+;mso-table-rspace:9"> <a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/6z=
+cdb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad494;text=
+-decoration: none;font-weight: bold;color: #2ad494;text-decoration: none;fo=
+nt-weight: bold" target=3D"_blank"> <img alt=3D"n3-seattlerep-image" border=
+=3D"0" height=3D"200" src=3D"https://d31hzlhk6di2h5.cloudfront.net/20260312=
+/45/fb/dc/03/ef951a3ad4a3c5ebfb25dd86_600x400.png" style=3D"display: block"=
+ width=3D"300"> </a> </div>
+</td> </tr> </tbody></table> <div class=3D"e2ma-combo-content e2ma-content-=
+block" style=3D"font-size: 12px;line-height: 1.5"> <h3 style=3D"display: bl=
+ock;font-size: 18px;font-weight: bold;color: #000;margin: 0 0 12px 0;line-h=
+eight: 1.3;margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;ver=
+tical-align: baseline;font-family: 'Roboto', Trebuchet, Arial, Helvetica, s=
+ans-serif;font-size: 20px;font-weight: bold;color: #F05A26;margin: 0;paddin=
+g: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;font-=
+family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 20px;f=
+ont-weight: bold;color: #F05A26;line-height: 24px; text-align: left"><span =
+class=3D"e2ma-style" style=3D"color: rgb(0, 85, 129)"><a data-name=3D"n3-se=
+attlerep-headline" data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdx=
+n/y5fxubf/msddb4c" style=3D"font-weight: normal;font-weight: normal;color: =
+#2ad494;text-decoration: none;font-weight: bold;color: #2ad494;text-decorat=
+ion: none;font-weight: bold;color: rgb(0, 51, 41); width: 285px; height: 19=
+0px">Seattle Rep&rsquo;s theater classes for teens</a></span></h3><div clas=
+s=3D"e2ma-p-div" style=3D"display: block;margin-bottom: 10px;font-size: 12p=
+x;font-weight: normal;line-height: 1.5;font-family: 'Roboto', Trebuchet, Ar=
+ial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family: 'Roboto=
+', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font=
+-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;=
+color: #000;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;=
+font-size: 16px;color: #000;text-align: left; line-height: 24px">Calling al=
+l young theater lovers! Seattle Rep&rsquo;s Young Rep classes are a space f=
+or theater-loving youth to connect, create and grow together.</div>
+<div class=3D"e2ma-p-div" style=3D"display: block;margin-bottom: 10px;font-=
+size: 12px;font-weight: normal;line-height: 1.5;font-family: 'Roboto', Treb=
+uchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family=
+: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: =
+#000;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-si=
+ze: 16px;color: #000;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sa=
+ns-serif;font-size: 16px;color: #000;text-align: left"><a data-name=3D"n3-s=
+eattlerep-more" data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y=
+5fxubf/2kedb4c" style=3D"font-weight: normal;font-weight: normal;color: #2a=
+d494;text-decoration: none;font-weight: bold;color: #2ad494;text-decoration=
+: none;font-weight: bold">More =E2=96=BA</a></div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_shxbjidv" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%">
+<tbody><tr>
+<td style=3D"padding-bottom:5px"></td>
+</tr>
+<tr>
+<td class=3D"e2ma-wrapper" style=3D"padding-right: 10px;padding-bottom: 5px=
+;padding-left: 10px" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-famil=
+y: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%">
+<tbody><tr>
+<td class=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent=
+">
+<div style=3D"border-bottom: #d8d8d7 solid 1px">
+<img border=3D"0" height=3D"1" src=3D"https://images.e2ma.net/images/spacer=
+.gif" style=3D"display:block" width=3D"1">
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_oblkissl" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:5px"></td> </tr> <tr> <td class=3D"e2ma-wrapper e2ma-image-td" style=3D=
+"padding-right: 10px;padding-bottom: 5px;padding-left: 10px;font-size: 12px=
+;line-height: 1.5" valign=3D"top"> <table border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-siz=
+e: 12px" width=3D"100%"> <tbody><tr> <td class=3D"e2ma-holder" style=3D"pad=
+ding: 0;background-color: transparent" valign=3D"top"> <div class=3D"e2ma-c=
+ontent-block"> <h1 style=3D"display: block;font-size: 30px;font-weight: bol=
+d;margin: 0;line-height: 1.3;margin: 0;padding: 0;border: 0;font-size: 100%=
+;font: inherit;vertical-align: baseline;font-family: 'Playfair Display', Ge=
+orgia, serif;font-size: 28px;font-weight: bold;color: #003329;margin: 0;pad=
+ding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;fo=
+nt-family: 'Playfair Display', Georgia, serif;font-size: 28px;font-weight: =
+bold;color: #003329;text-align: center"><span class=3D"e2ma-style" style=3D=
+"color: rgb(240, 90, 38); font-size: 30px">Popular now</span></h1> </div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_ukzhvlnq" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:5px"></td> </tr> <tr> <td class=3D"e2ma-wrapper" style=3D"padding-right=
+: 10px;padding-bottom: 0;padding-left: 10px" valign=3D"top"> <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Arial, Hel=
+vetica, sans-serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=
+=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent" valign=
+=3D"top"> <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"=
+font-family: Arial, Helvetica, sans-serif;font-size: 12px"> <tbody><tr><td =
+valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px"><tbody><tr>=
+ <td class=3D"e2ma-image-td" style=3D"text-align: center; padding: 10px 5px=
+ 10px 11px; " valign=3D"top"> <a href=3D"https://t.e2ma.net/click/24hdxn/y5=
+fxubf/idfdb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad=
+494;text-decoration: none;font-weight: bold;color: #2ad494;text-decoration:=
+ none;font-weight: bold" target=3D"_blank"> <img alt=3D"daffodils-image" bo=
+rder=3D"0" height=3D"143" src=3D"https://d31hzlhk6di2h5.cloudfront.net/2026=
+0312/a8/63/f0/34/2a68aa99b410c39072a4b8db_800x600.jpg" style=3D"display: bl=
+ock" width=3D"191"> </a> <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px">=
+ <tbody><tr> <td class=3D"e2ma-image-caption e2ma-content-block" style=3D"t=
+ext-align: center;font-family: Helvetica, Arial, sans-serif;padding: 13px 3=
+px 3px 3px" width=3D"191"> <h3 style=3D"display: block;font-size: 18px;font=
+-weight: bold;color: #000;margin: 0 0 12px 0;line-height: 1.3;margin: 0;pad=
+ding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;fo=
+nt-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 20p=
+x;font-weight: bold;color: #F05A26;margin: 0;padding: 0;border: 0;font-size=
+: 100%;font: inherit;vertical-align: baseline;font-family: 'Roboto', Trebuc=
+het, Arial, Helvetica, sans-serif;font-size: 20px;font-weight: bold;color: =
+#F05A26;line-height: 26px"><span class=3D"e2ma-style" style=3D"color: rgb(0=
+, 51, 41)"><a data-name=3D"daffodils-headline" data-type=3D"url" href=3D"ht=
+tps://t.e2ma.net/click/24hdxn/y5fxubf/y5fdb4c" style=3D"font-weight: normal=
+;font-weight: normal;color: #2ad494;text-decoration: none;font-weight: bold=
+;color: #2ad494;text-decoration: none;font-weight: bold;color: rgb(0, 51, 4=
+1); width: 191px; height: 143px">The little-known festival that rivals the =
+tulips</a></span></h3> </td> </tr> </tbody></table> </td> <td class=3D"e2ma=
+-image-td" style=3D"text-align: center; padding: 10px 5px 10px 5px; " valig=
+n=3D"top"> <a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/eygdb4c" styl=
+e=3D"font-weight: normal;font-weight: normal;color: #2ad494;text-decoration=
+: none;font-weight: bold;color: #2ad494;text-decoration: none;font-weight: =
+bold" target=3D"_blank"> <img alt=3D"free-march-image" border=3D"0" height=
+=3D"143" src=3D"https://d31hzlhk6di2h5.cloudfront.net/20260312/1e/01/35/b8/=
+79d1e31bdc57acb696914301_1336x1002.png" style=3D"display: block" width=3D"1=
+96"> </a> <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"=
+font-family: Arial, Helvetica, sans-serif;font-size: 12px"> <tbody><tr> <td=
+ class=3D"e2ma-image-caption e2ma-content-block" style=3D"text-align: cente=
+r;font-family: Helvetica, Arial, sans-serif;padding: 13px 3px 3px 3px" widt=
+h=3D"196"> <h3 style=3D"display: block;font-size: 18px;font-weight: bold;co=
+lor: #000;margin: 0 0 12px 0;line-height: 1.3;margin: 0;padding: 0;border: =
+0;font-size: 100%;font: inherit;vertical-align: baseline;font-family: 'Robo=
+to', Trebuchet, Arial, Helvetica, sans-serif;font-size: 20px;font-weight: b=
+old;color: #F05A26;margin: 0;padding: 0;border: 0;font-size: 100%;font: inh=
+erit;vertical-align: baseline;font-family: 'Roboto', Trebuchet, Arial, Helv=
+etica, sans-serif;font-size: 20px;font-weight: bold;color: #F05A26;line-hei=
+ght: 26px"><span class=3D"e2ma-style" style=3D"color: rgb(0, 51, 41)"><a da=
+ta-name=3D"free-march-headline" data-type=3D"url" href=3D"https://t.e2ma.ne=
+t/click/24hdxn/y5fxubf/uqhdb4c" style=3D"font-weight: normal;font-weight: n=
+ormal;color: #2ad494;text-decoration: none;font-weight: bold;color: #2ad494=
+;text-decoration: none;font-weight: bold;color: rgb(0, 51, 41); width: 196p=
+x; height: 144px">Best free events this month you don&rsquo;t want to miss<=
+/a></span></h3> </td> </tr> </tbody></table> </td> <td class=3D"e2ma-image-=
+td" style=3D"text-align: center; padding: 10px 11px 10px 5px; " valign=3D"t=
+op"> <a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/ajidb4c" style=3D"f=
+ont-weight: normal;font-weight: normal;color: #2ad494;text-decoration: none=
+;font-weight: bold;color: #2ad494;text-decoration: none;font-weight: bold" =
+target=3D"_blank"> <img alt=3D"ramen-image" border=3D"0" height=3D"143" src=
+=3D"https://d31hzlhk6di2h5.cloudfront.net/20260312/c6/03/74/1a/478113e1bdc6=
+9498ed6e2ddc_800x600.jpg" style=3D"display: block" width=3D"191"> </a> <tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: A=
+rial, Helvetica, sans-serif;font-size: 12px"> <tbody><tr> <td class=3D"e2ma=
+-image-caption e2ma-content-block" style=3D"text-align: center;font-family:=
+ Helvetica, Arial, sans-serif;padding: 13px 3px 3px 3px" width=3D"191"> <h3=
+ style=3D"display: block;font-size: 18px;font-weight: bold;color: #000;marg=
+in: 0 0 12px 0;line-height: 1.3;margin: 0;padding: 0;border: 0;font-size: 1=
+00%;font: inherit;vertical-align: baseline;font-family: 'Roboto', Trebuchet=
+, Arial, Helvetica, sans-serif;font-size: 20px;font-weight: bold;color: #F0=
+5A26;margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-=
+align: baseline;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-se=
+rif;font-size: 20px;font-weight: bold;color: #F05A26;line-height: 26px"><sp=
+an class=3D"e2ma-style" style=3D"color: rgb(0, 51, 41)"><a data-name=3D"ram=
+en-headline" data-type=3D"url" href=3D"https://t.e2ma.net/click/24hdxn/y5fx=
+ubf/qbjdb4c" style=3D"font-weight: normal;font-weight: normal;color: #2ad49=
+4;text-decoration: none;font-weight: bold;color: #2ad494;text-decoration: n=
+one;font-weight: bold;color: rgb(0, 51, 41); width: 191px; height: 143px">I=
+ncredible ramen spots the kids will love too</a></span></h3> </td> </tr> </=
+tbody></table> </td> </tr></tbody></table></td></tr> </tbody></table> </td>=
+ </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_zhamokmy" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%">
+<tbody><tr>
+<td style=3D"padding-bottom:5px"></td>
+</tr>
+<tr>
+<td class=3D"e2ma-wrapper" style=3D"padding-right: 10px;padding-bottom: 5px=
+;padding-left: 10px" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-famil=
+y: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%">
+<tbody><tr>
+<td class=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent=
+">
+<div style=3D"border-bottom: #d8d8d7 solid 1px">
+<img border=3D"0" height=3D"1" src=3D"https://images.e2ma.net/images/spacer=
+.gif" style=3D"display:block" width=3D"1">
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_htfhorat" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:5px"></td> </tr> <tr> <td class=3D"e2ma-wrapper e2ma-image-td" style=3D=
+"padding-right: 10px;padding-bottom: 0;padding-left: 10px;font-size: 12px;l=
+ine-height: 1.5" valign=3D"top"> <table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size:=
+ 12px" width=3D"100%"> <tbody><tr> <td class=3D"e2ma-holder" style=3D"paddi=
+ng: 0;background-color: transparent" valign=3D"top"> <div class=3D"e2ma-con=
+tent-block"> <div class=3D"e2ma-p-div" style=3D"display: block;margin-botto=
+m: 10px;font-size: 12px;font-weight: normal;line-height: 1.5;font-family: '=
+Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #00=
+0;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size:=
+ 16px;color: #000;text-align: center; line-height: 16.8px"><i><span class=
+=3D"e2ma-style" style=3D"font-size: 14px">Advertisements</span></i></div>
+</div>
+</td> </tr> </tbody></table> </td> </tr> </tbody></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-block=
+-outer" id=3D"block_ikwztoow" style=3D"font-family: Arial, Helvetica, sans-=
+serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td style=3D"padding-bot=
+tom:5px"></td> </tr> <tr> <td class=3D"e2ma-wrapper" style=3D"padding-right=
+: 10px;padding-bottom: 0;padding-left: 10px" valign=3D"top"> <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Arial, Hel=
+vetica, sans-serif;font-size: 12px" width=3D"100%"> <tbody><tr> <td class=
+=3D"e2ma-holder" style=3D"padding: 0;background-color: transparent" valign=
+=3D"top"> <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"=
+font-family: Arial, Helvetica, sans-serif;font-size: 12px"> <tbody><tr><td =
+valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px"><tbody><tr>=
+ <td class=3D"e2ma-image-td" style=3D"text-align: center; padding: 10px 15p=
+x 10px 10px; " valign=3D"top"> <a href=3D"https://t.e2ma.net/click/24hdxn/y=
+5fxubf/63jdb4c" style=3D"font-weight: normal;font-weight: normal;color: #2a=
+d494;text-decoration: none;font-weight: bold;color: #2ad494;text-decoration=
+: none;font-weight: bold" target=3D"_blank"> <img alt=3D"cb1-bilingual-imag=
+e" border=3D"0" height=3D"190" src=3D"https://d31hzlhk6di2h5.cloudfront.net=
+/20260312/73/1b/4a/48/954f2f52b50686a843cf0deb_600x400.jpg" style=3D"displa=
+y: block" width=3D"285"> </a> <table border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12=
+px"> <tbody><tr> <td class=3D"e2ma-image-caption e2ma-content-block" style=
+=3D"text-align: center;font-family: Helvetica, Arial, sans-serif;padding: 1=
+3px 3px 3px 3px" width=3D"285">
+<h3 style=3D"display: block;font-size: 18px;font-weight: bold;color: #000;m=
+argin: 0 0 12px 0;line-height: 1.3;margin: 0;padding: 0;border: 0;font-size=
+: 100%;font: inherit;vertical-align: baseline;font-family: 'Roboto', Trebuc=
+het, Arial, Helvetica, sans-serif;font-size: 20px;font-weight: bold;color: =
+#F05A26;margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertic=
+al-align: baseline;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans=
+-serif;font-size: 20px;font-weight: bold;color: #F05A26;line-height: 24px; =
+text-align: left"><span class=3D"e2ma-style" style=3D"color: rgb(0, 85, 129=
+)"><a data-name=3D"cb1-bilingual-headline" data-type=3D"url" href=3D"https:=
+//t.e2ma.net/click/24hdxn/y5fxubf/mwkdb4c" style=3D"font-weight: normal;fon=
+t-weight: normal;color: #2ad494;text-decoration: none;font-weight: bold;col=
+or: #2ad494;text-decoration: none;font-weight: bold;color: rgb(0, 51, 41); =
+width: 285px; height: 190px">Unique bilingual Montessori education</a></spa=
+n></h3><div class=3D"e2ma-p-div" style=3D"display: block;margin-bottom: 10p=
+x;font-size: 12px;font-weight: normal;line-height: 1.5;font-family: 'Roboto=
+', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font=
+-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;=
+color: #000;text-align: left; line-height: 20.8px">For over 10 years Eastsi=
+de Bilingual Montessori&rsquo;s goal&nbsp;has been to provide a high-qualit=
+y bilingual Montessori education in a comfortable, peaceful and safe enviro=
+nment.</div>
+<div class=3D"e2ma-p-div" style=3D"display: block;margin-bottom: 10px;font-=
+size: 12px;font-weight: normal;line-height: 1.5;font-family: 'Roboto', Treb=
+uchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family=
+: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: =
+#000;text-align: left"><a data-name=3D"cb1-bilingual-more" data-type=3D"url=
+" href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/2oldb4c" style=3D"font-we=
+ight: normal;font-weight: normal;color: #2ad494;text-decoration: none;font-=
+weight: bold;color: #2ad494;text-decoration: none;font-weight: bold">More&n=
+bsp;=E2=96=BA</a></div>
+</td> </tr> </tbody></table> </td> <td class=3D"e2ma-image-td" style=3D"tex=
+t-align: center; padding: 10px 10px 10px 15px; " valign=3D"top"> <a href=3D=
+"https://t.e2ma.net/click/24hdxn/y5fxubf/ihmdb4c" style=3D"font-weight: nor=
+mal;font-weight: normal;color: #2ad494;text-decoration: none;font-weight: b=
+old;color: #2ad494;text-decoration: none;font-weight: bold" target=3D"_blan=
+k"> <img alt=3D"cb2-reeves-image" border=3D"0" height=3D"190" src=3D"https:=
+//d31hzlhk6di2h5.cloudfront.net/20260312/4d/e1/7d/61/460fda6780d60a910cb9ba=
+8c_1200x800.png" style=3D"display: block" width=3D"285"> </a> <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Arial, Hel=
+vetica, sans-serif;font-size: 12px"> <tbody><tr> <td class=3D"e2ma-image-ca=
+ption e2ma-content-block" style=3D"text-align: center;font-family: Helvetic=
+a, Arial, sans-serif;padding: 13px 3px 3px 3px" width=3D"285"> <h3 style=3D=
+"display: block;font-size: 18px;font-weight: bold;color: #000;margin: 0 0 1=
+2px 0;line-height: 1.3;margin: 0;padding: 0;border: 0;font-size: 100%;font:=
+ inherit;vertical-align: baseline;font-family: 'Roboto', Trebuchet, Arial, =
+Helvetica, sans-serif;font-size: 20px;font-weight: bold;color: #F05A26;marg=
+in: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: ba=
+seline;font-family: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-=
+size: 20px;font-weight: bold;color: #F05A26;line-height: 24px; text-align: =
+left"><span class=3D"e2ma-style" style=3D"color: rgb(0, 85, 129)"><a data-n=
+ame=3D"cb2-reeves-headline" data-type=3D"url" href=3D"https://t.e2ma.net/cl=
+ick/24hdxn/y5fxubf/y9mdb4c" style=3D"font-weight: normal;font-weight: norma=
+l;color: #2ad494;text-decoration: none;font-weight: bold;color: #2ad494;tex=
+t-decoration: none;font-weight: bold;color: rgb(0, 51, 41); width: 285px; h=
+eight: 190px">The quiet crisis facing boys today</a></span></h3><div class=
+=3D"e2ma-p-div" style=3D"display: block;margin-bottom: 10px;font-size: 12px=
+;font-weight: normal;line-height: 1.5;font-family: 'Roboto', Trebuchet, Ari=
+al, Helvetica, sans-serif;font-size: 16px;color: #000;font-family: 'Roboto'=
+, Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;text-=
+align: left; line-height: 20.8px">Boys are struggling &mdash; and it&rsquo;=
+s not about effort. Join Richard Reeves for a ParentEd Talk on what&rsquo;s=
+ happening and how parents can help their boys thrive. </div>
+<div class=3D"e2ma-p-div" style=3D"display: block;margin-bottom: 10px;font-=
+size: 12px;font-weight: normal;line-height: 1.5;font-family: 'Roboto', Treb=
+uchet, Arial, Helvetica, sans-serif;font-size: 16px;color: #000;font-family=
+: 'Roboto', Trebuchet, Arial, Helvetica, sans-serif;font-size: 16px;color: =
+#000;text-align: left"><a data-name=3D"cb2-reeves-more" data-type=3D"url" h=
+ref=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/e2ndb4c" style=3D"font-weigh=
+t: normal;font-weight: normal;color: #2ad494;text-decoration: none;font-wei=
+ght: bold;color: #2ad494;text-decoration: none;font-weight: bold">Sign up n=
+ow =E2=96=BA</a></div>
+</td> </tr> </tbody></table> </td> </tr></tbody></table></td></tr> </tbody>=
+</table> </td> </tr> </tbody></table> </td> </tr> </tbody></table>
+</td></tr></tbody></table> <div class=3D"e2ma-single-column-layout e2ma-sec=
+tion"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font=
+-family: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%"><tbod=
+y><tr><td class=3D"e2ma-design-option-template" data-e2ma-styles=3D"backgro=
+und, border-left, border-right" style=3D"background-color: transparent"> </=
+td></tr></tbody></table></div>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"e2ma-row-r=
+egion-content e2ma-section" style=3D"font-family: Arial, Helvetica, sans-se=
+rif;font-size: 12px" width=3D"100%"><tbody><tr><td class=3D"e2ma-layout-col=
+umn-content"></td></tr></tbody></table></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td align=3D"center" class=3D"sanpad" style=3D"background-color: #69c4a0; p=
+adding-top: 25px" valign=3D"top"><table align=3D"center" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" class=3D"mobile-width-nopad" style=3D"font-f=
+amily: Arial, Helvetica, sans-serif;font-size: 12px;width: 640px">
+<tbody>
+<tr>
+<td><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-f=
+amily: Arial, Helvetica, sans-serif;font-size: 12px" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"stack center" style=3D"background-color: #ef5a25; width: 228px=
+; padding: 10px 0px"><table align=3D"center" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" style=3D"font-family: Arial, Helvetica, sans-serif;font-=
+size: 12px;width: 190px">
+<tbody>
+<tr>
+<td style=3D"width: 26px"><img alt=3D"" border=3D"0" height=3D"21" src=3D"h=
+ttps://images.e2ma.net/1782148/images/templates/ParentMapSlice_18.png" styl=
+e=3D"display: block" width=3D"26"></td>
+<td style=3D"font-family: 'Roboto', Trebuchet, Arial, sans-serif; font-size=
+: 18px; line-height: 1.2; color: #ffffff; text-align: center; font-weight: =
+bold"><a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/uuodb4c" style=3D"=
+font-weight: normal;font-weight: normal;text-decoration: none; color: #ffff=
+ff; font-weight: bold" target=3D"_blank">FIND MORE FUN</a></td>
+</tr>
+</tbody>
+</table></td>
+<td class=3D"hide">&nbsp;</td>
+<td align=3D"center" class=3D"stack center addpad-more" style=3D"width: 239=
+px"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"font-family: Arial, Helvetica, sans-serif;font-size: 12px;width:=
+ 239px">
+<tbody>
+<tr>
+<td style=3D"width: 39px"><a href=3D"https://t.e2ma.net/click/24hdxn/y5fxub=
+f/anpdb4c" style=3D"font-weight: normal;font-weight: normal" target=3D"_bla=
+nk"><img alt=3D"Facebook" border=3D"0" height=3D"32" src=3D"https://images.=
+e2ma.net/1782148/images/templates/ParentMapSlice_11.png" style=3D"display: =
+block" width=3D"39"></a></td>
+<td style=3D"width: 49px"><a href=3D"https://t.e2ma.net/click/24hdxn/y5fxub=
+f/qfqdb4c" style=3D"font-weight: normal;font-weight: normal" target=3D"_bla=
+nk"><img alt=3D"Twitter" border=3D"0" height=3D"32" src=3D"https://images.e=
+2ma.net/1782148/images/templates/ParentMapSlice_12.png" style=3D"display: b=
+lock" width=3D"49"></a></td>
+<td style=3D"width: 56px"><a href=3D"https://t.e2ma.net/click/24hdxn/y5fxub=
+f/67qdb4c" style=3D"font-weight: normal;font-weight: normal" target=3D"_bla=
+nk"><img alt=3D"Instagram" border=3D"0" height=3D"32" src=3D"https://images=
+.e2ma.net/1782148/images/templates/ParentMapSlice_13.png" style=3D"display:=
+ block" width=3D"56"></a></td>
+<td style=3D"width: 49px"><a href=3D"https://t.e2ma.net/click/24hdxn/y5fxub=
+f/m0rdb4c" style=3D"font-weight: normal;font-weight: normal" target=3D"_bla=
+nk"><img alt=3D"Pinterest" border=3D"0" height=3D"32" src=3D"https://images=
+.e2ma.net/1782148/images/templates/ParentMapSlice_14.png" style=3D"display:=
+ block" width=3D"49"></a></td>
+<td style=3D"width: 46px"><a href=3D"https://t.e2ma.net/click/24hdxn/y5fxub=
+f/2ssdb4c" style=3D"font-weight: normal;font-weight: normal" target=3D"_bla=
+nk"><img alt=3D"Events" border=3D"0" height=3D"32" src=3D"https://images.e2=
+ma.net/1782148/images/templates/ParentMapSlice_15.png" style=3D"display: bl=
+ock" width=3D"46"></a></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td style=3D"font-family: 'Roboto', Trebuchet, Arial, sans-serif; font-size=
+: 11px; line-height: 1.2; color: #000000; text-align: center; padding: 25px=
+ 0px">Can't buy our love! ParentMap never sells our good reviews or recomme=
+ndations for events. Our opinions aren't for sale, and we think that matter=
+s. Find more great events on our <a href=3D"https://t.e2ma.net/click/24hdxn=
+/y5fxubf/iltdb4c" style=3D"font-weight: normal;font-weight: normal;text-dec=
+oration: underline; color: #000000" target=3D"_blank">Family Fun Calendar.<=
+/a> To submit an event, <a href=3D"https://t.e2ma.net/click/24hdxn/y5fxubf/=
+ydudb4c" style=3D"font-weight: normal;font-weight: normal;text-decoration: =
+underline; color: #000000">fill out our online form.</a></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr>
+<td align=3D"center" style=3D"background-color: #003329; padding: 20px 0px"=
+ valign=3D"top"><table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" class=3D"mobile-width-nopad" style=3D"font-family: Arial, Hel=
+vetica, sans-serif;font-size: 12px;width: 640px">
+<tbody>
+<tr>
+<td class=3D"stack center mobile-width-nopad" style=3D"font-family: 'Roboto=
+', Trebuchet, Arial, sans-serif; font-size: 11px; line-height: 1.2; color: =
+#ffffff; text-align: left; width: 320px"><strong>ParentMap</strong><br>
+<a href=3D"#" style=3D"font-weight: normal;font-weight: normal;text-decorat=
+ion:none; pointer-events:none; color: #ffffff">7683 SE 27th St. PMB #190<br=
+>
+Mercer Island, WA 98040</a></td>
+<td class=3D"stack center addpad-top" style=3D"font-family: 'Roboto', Trebu=
+chet, Arial, sans-serif; font-size: 11px; line-height: 1.2; color: #ffffff;=
+ text-align: left">Manage your <a href=3D"https://app.e2ma.net/app2/audienc=
+e/signup/1833983/1782148/824841604/10979050884/?s=3DQojN4GvAaJi6SN_PFRwmOoY=
+JZBMp4KrdK58aGOWEZRk" style=3D"font-weight: normal;font-weight: normal;text=
+-decoration: underline; color: #ffffff" target=3D"_blank">preferences</a>. =
+| <a href=3D'https://t.e2ma.net/optout/24hdxn/y5fxubf?s=3Drs8nzvsalzASi-xHi=
+nmxgv2taFDtEx3AwlLvyxCJSyY' style=3D"font-weight: normal;font-weight: norma=
+l;text-decoration: underline; color: #ffffff" target=3D"_blank">Opt out</a>=
+ using True Remove&trade;.<br>
+Got this as a forward? <a href=3D"https://app.e2ma.net/app2/audience/signup=
+/1833983/1782148.824841604/" style=3D"font-weight: normal;font-weight: norm=
+al;text-decoration: underline; color: #ffffff" target=3D"_blank">Sign up</a=
+> to receive our future emails.<br>
+View this message <a href=3D'https://t.e2ma.net/message/24hdxn/y5fxubf' sty=
+le=3D"font-weight: normal;font-weight: normal;text-decoration: underline; c=
+olor: #ffffff" target=3D"_blank">online</a>.</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+<img src=3D"https://t.e2ma.net/track/24hdxn/y5fxubf" width=3D"1" height=3D"=
+1"></body></html>
+--==177337277208630==--
